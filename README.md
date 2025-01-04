@@ -1,67 +1,52 @@
-
-
-```markdown
 # Capstone BCDR Project - Terraform Configuration
 
 ## Introduction
 
-The **Capstone BCDR Project** is designed to create a reliable, scalable, and automated infrastructure for **Business Continuity and Disaster Recovery (BCDR)** using **Terraform**. The project focuses on provisioning essential resources in **Microsoft Azure**, including **Recovery Services Vaults**, **Resource Groups**, **Virtual Networks**, and **Virtual Machines**, all of which are critical components for disaster recovery planning. The goal is to ensure **high availability** and **system resilience** during unexpected system failures or disasters by utilizing Azure's cloud infrastructure.
-
-This project was developed in tandem with an internship, where it was applied to real-world scenarios, automating disaster recovery processes and reducing downtime in cloud environments.
-
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Getting Started](#getting-started)
-   - Installation Process
-   - Configuration
-3. [Project Structure](#project-structure)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
-7. [Acknowledgments](#acknowledgments)
+The **Capstone BCDR Project** aims to create a reliable, scalable cloud infrastructure for Business Continuity and Disaster Recovery (BCDR) using **Terraform**. This project automates the provisioning of essential resources in **Microsoft Azure**, such as **Recovery Services Vaults**, **Resource Groups**, **Virtual Networks**, and **Virtual Machines**—key components for disaster recovery planning. The goal is to ensure high availability and resilience in case of system failures or disasters by leveraging Azure's cloud infrastructure.
 
 ## Getting Started
 
-To set up and run this project on your local machine, follow these instructions.
+To get this project up and running on your local system, follow the steps below.
 
 ### 1. Installation Process
 
-Before running this project, ensure the following software is installed on your system:
+Before you can run this project, make sure you have the following software installed:
 
 #### Visual Studio Code
 
-Download and install **Visual Studio Code** from the official [Visual Studio Code website](https://code.visualstudio.com/Download).
+You will need **Visual Studio Code** (VS Code) as your code editor. Follow the installation instructions from the official [Visual Studio Code website](https://code.visualstudio.com/Download).
 
 #### Terraform
 
-You need **Terraform** to manage the cloud infrastructure. Follow these steps to install it:
+You need to have **Terraform** installed to manage infrastructure. To install Terraform:
 
-- Go to the [Terraform download page](https://www.terraform.io/downloads.html) to select the appropriate version for your OS.
+- Go to the [Terraform download page](https://www.terraform.io/downloads.html) and choose the appropriate version for your OS.
 
-For specific installation instructions:
-
-- **macOS** (Homebrew):
-    ```bash
+  - **macOS** (Homebrew):
+    
+bash
     brew install terraform
-    ```
-- **Windows** (via Chocolatey):
-    ```bash
+
+  - **Windows** (via Chocolatey):
+    
+bash
     choco install terraform
-    ```
-- **Linux** (via apt):
-    ```bash
+
+  - **Linux** (via apt):
+    
+bash
     sudo apt-get install terraform
-    ```
+
 
 #### Azure CLI
 
-To interact with Microsoft Azure, you must install the **Azure CLI**. Follow the installation steps from the [Azure CLI documentation](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
+You also need to install the **Azure CLI** to interact with Microsoft Azure:
 
-After installation, verify it by running:
-```bash
+- Go to the [Azure CLI installation page](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) and follow the instructions for your operating system.
+
+Once installed, you can verify the installation by running:
+bash
 az --version
-```
 
 ### 2. Configuration
 
